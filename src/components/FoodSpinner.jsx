@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 import React, { useState, useRef, useEffect } from "react";
+=======
+
+import React, { useState, useRef, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+>>>>>>> ad213f2d3e87c4ed11deebb6bcaa90e3ea7da708
 import { motion } from "framer-motion";
 
 const foodOptions = [
@@ -71,6 +77,7 @@ export default function FoodSpinner() {
           })}
         </div>
       </div>
+<<<<<<< HEAD
       <button
         onClick={spinWheel}
         disabled={spinning}
@@ -78,6 +85,11 @@ export default function FoodSpinner() {
       >
         {spinning ? "Spinning..." : "SPIN"}
       </button>
+=======
+      <Button onClick={spinWheel} disabled={spinning}>
+        {spinning ? "Spinning..." : "SPIN"}
+      </Button>
+>>>>>>> ad213f2d3e87c4ed11deebb6bcaa90e3ea7da708
       {selectedIndex !== null && !spinning && (
         <div className="mt-4 text-lg font-semibold">
           You should eat: {foodOptions[selectedIndex]}
@@ -85,4 +97,8 @@ export default function FoodSpinner() {
       )}
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ad213f2d3e87c4ed11deebb6bcaa90e3ea7da708
